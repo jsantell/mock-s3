@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/jsantell/mock-s3",
   "dependencies": {
-    "when": "^3.7.2"
+    "when": "^3.7.2",
+    "stream-buffers": "~2.1.0"
   },
   "keywords": [
     "aws",
