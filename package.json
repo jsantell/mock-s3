@@ -1,0 +1,34 @@
+{
+  "name": "mock-s3",
+  "version": "1.0.0",
+  "description": "In-memory mock S3 lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --ui bdd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsantell/mock-s3.git"
+  },
+  "author": "Jordan Santell`",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsantell/mock-s3/issues"
+  },
+  "homepage": "https://github.com/jsantell/mock-s3",
+  "dependencies": {
+    "when": "^3.7.2"
+  },
+  "keywords": [
+    "aws",
+    "s3",
+    "mock",
+    "amazon",
+    "testing"
+  ],
+  "devDependencies": {
+    "chai": "~2.1.2",
+    "mocha": "~2.2.1",
+    "buffer-equal": "0.0.1"
+  }
+}
