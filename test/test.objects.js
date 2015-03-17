@@ -41,7 +41,7 @@ describe("Objects", function (done) {
 
     it("returns a stream for 'Body' if using createReadStream", function (done) {
       var s3 = this.s3;
-      var buffer = new Buffer(3000);
+      var buffer = new Buffer(120000);
       var chunks = [];
       buffer.fill(100);
       s3.putObject({ Bucket: "exists", Key: "file", Body: buffer }, function (err, res) {
@@ -52,7 +52,7 @@ describe("Objects", function (done) {
             chunks.push(chunk);
           })
           .on("end", function () {
-            var combined = Buffer.concat(chunks, 3000);
+            var combined = Buffer.concat(chunks, 120000);
             expect(bufferEquals(buffer, combined)).to.be.ok;
             done();
           });

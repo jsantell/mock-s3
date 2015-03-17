@@ -1,6 +1,6 @@
 {
   "name": "mock-s3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "In-memory mock S3 lib",
   "main": "index.js",
   "scripts": {
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/jsantell/mock-s3",
   "dependencies": {
-    "when": "^3.7.2",
-    "stream-buffers": "~2.1.0"
+    "streambuffers": "^1.0.0",
+    "when": "^3.7.2"
   },
   "keywords": [
     "aws",
